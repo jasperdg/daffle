@@ -1,0 +1,208 @@
+.winner-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: -63px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 30;
+}
+.picking p{
+  text-align: center;
+  color: #1864BA;
+  font-size: 10px;
+}
+.winner-section {
+    background-color: white;
+    height: 150px;
+    position: absolute;
+    width: 350px;
+    left: calc(50vw - 175px);
+    top: calc(50vh - 75px);
+    padding: 25px 10px;
+    text-align: center;
+    color: #1864BA;
+    z-index: 45;
+}
+
+.winner-section a{
+  z-index: 50;
+  padding: 5px;
+}
+.picked{
+    padding-top: 0px;
+}
+.picked h3{
+  margin: 0 auto;
+
+}
+
+.winner-section .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* CheckPoints */
+.checkpoints{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  margin: auto;
+}
+.spinner {
+  width: 15px;
+  height: 15px;
+
+  position: relative;
+  margin: 30px auto;
+}
+
+.double-bounce1.inactive, .double-bounce2.inactive {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  border: 1px solid #1864BA;
+  top: 0;
+  left: 0;
+  
+}
+
+.double-bounce1.done, .double-bounce2.done {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1864BA;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.double-bounce1.active, .double-bounce2.active {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1864BA;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2.active {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+/* Winner animation */
+.winner-section svg {
+  width: 100px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.winner h3{
+  color: #73AF55;
+}
+
+.loser h3 {
+  color: #D06079;
+}
+
+.picked .circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+  }
+.picked .line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash .9s .35s ease-in-out forwards;
+  animation: dash .9s .35s ease-in-out forwards;
+  }
+.picked .check {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke-dashoffset: -100;
+  -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+  animation: dash-check .9s .35s ease-in-out forwards;
+  }
+
+
+
+p.success {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+    color: #73AF55;
+  }
+p.error {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+  color: #D06079;
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}

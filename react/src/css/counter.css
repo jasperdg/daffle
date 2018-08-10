@@ -1,0 +1,13 @@
+.counter-text {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+span.counter {
+  font-size: 48px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}

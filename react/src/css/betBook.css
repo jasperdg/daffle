@@ -1,0 +1,152 @@
+.betBook{
+  width: 250px;
+  background-color: white;
+  height: 400px;
+  position: absolute;
+  left: 30px;
+  top: calc(50vh - 240px);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+  padding: 15px;
+}
+
+.chart{
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(50vh - 220px);
+}
+
+.betBook ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bet{
+  border-bottom: 1px solid rgba(0,0,0,0.22);
+  padding-bottom: 3px;
+  width: 90%;
+  margin: 10px auto;
+}
+.bet.total{
+  text-align: center;
+}
+.no-bets.show {
+  display: block;
+  text-align: center;
+}
+
+.no-bets.hide {
+  display: none;
+}
+
+.bet .win-chance{
+  float: right;
+}
+
+.show{
+  display: block;
+}
+.hide {
+  display: none;
+}
+.button {
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin: 8px;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+.lobby-fill{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.22);
+}
+
+.refund-warning{
+  text-align: center;
+  color: red;
+  font-size: 10px;
+  margin-top: 90px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+
+.info {
+  width: 17px;
+  vertical-align: text-top	;
+  margin-left: 5px;
+}
+
+.transaction-pop-up{
+  background-color: white;
+  text-align: center;
+  width: 600px;
+  height: 90px;
+  padding: 25px 15px;
+  position: absolute;
+  left: calc(50vw - 300px);
+  top: calc(50vh - 75px);
+  z-index: 35;
+}
+.transaction-pop-up .close{
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  font-size: 22px;
+  padding: 10px;
+  top: 0;
+
+}
+
+.refund-warning.hide{
+  display: none;
+}
+.refund-warning.show{
+  display: block;
+}
+.bet-button {
+  color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 20%
+}
+
+.bet-button.active{
+  border: 2px solid #1864BA;
+  background-color: #1864BA;
+}
+.bet-button.inactive{
+  background-color: grey;
+
+}
+
+.bet-button.hide {
+  display: none;
+}
+.bet-button.show {
+  display: block;
+}
+.button.unselected {
+  border: 2px solid #1864BA;
+  background-color: white;
+}
+
+.button.selected {
+  border: 2px solid #1864BA;
+  background-color: #1864BA;
+  color: white;
+}
+
+.stake {
+  text-align: center;
+}

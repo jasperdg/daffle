@@ -1,0 +1,12 @@
+.info-elem.hide{
+  display:none;
+}
+
+.info-elem {
+  width: 385px;
+  background-color: white;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 15;
+  border: 2px solid #1864BA;
+}

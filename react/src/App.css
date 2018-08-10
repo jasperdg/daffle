@@ -1,0 +1,259 @@
+.App {
+  font-family: Helvetica, sans-serif;
+  background-color: #F4F7FA;
+  height: 100vh;
+}
+
+header {
+  background-color: #1864BA;
+  padding: 20px 30px;
+  color: white;
+}
+header h1 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.info-button{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  margin-right: 15px;
+}
+.info-section {
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+  top: 10vh;
+  left: 10%;
+  z-index: 20;
+  background-color: white;
+  padding: 20px 35px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.22);
+}
+
+.info-section .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.info-section h1{
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+  color: #1864BA;
+}
+
+.info-section h2{
+  color: #1864BA;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+
+.info-section h3{
+  color: #1864BA;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 3rem;
+  margin-bottom: 5px;
+}
+
+.info-section p{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+section.main{
+  padding: 20px 30px;
+  display: block;
+  position: relative;
+}
+.App-intro {
+  font-size: large;
+}
+
+.noUserName.show {
+  width: 100%;
+  height: calc(100% - 20px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(24, 100, 186, 0.8);
+  z-index: 2;
+}
+.noUserName.hide p {
+  display: none;
+}
+.noUserName.show p {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  margin-top: 100px;
+}
+.noUserName.show .selectUserName{
+  margin-bottom: 100px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+section.chat{
+  /* background-color: white; */
+  color: black;
+  position: absolute;
+  text-align: left;
+  right: 30px;
+  bottom: 0;
+  height: 270px;
+  width: 15%;
+}/*olor clue : #1864BA*/
+
+section.chat.hide {
+  display: block;
+}
+section.chat.hide .chat-body{
+  display: none;
+}
+
+
+section.chat.hide .chat-header{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+section.chat .arrow.up{
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.chat .arrow.down{
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: 10px;
+
+}
+.login-notifier{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.8);
+  z-index: 10;
+}
+
+.login-notifier .content-section{
+  background-color: rgba(24, 100, 186, 0.8);
+  width: 40%;
+  position: absolute;
+  left: calc(50% - 20%);
+  top: 30vh;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-notifier h3{
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.login-notifier img {
+  display: block;
+  margin: auto;
+}
+
+.login-notifier .content-section .cross{
+  position: absolute;
+  /* display: block; */
+  right: 10px;
+  top: 0;
+  margin: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.login-notifier img{
+  width: 150px;
+}
+section.chat .arrow{
+  display: inline-block;
+  border: 1px solid white;
+  border-width: 0 0 1px 1px;
+  width: 10px;
+  height: 10px;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+section.chat .chat-header{
+  background-color: #1864BA;
+  color: white;
+  font-size: 10px;
+  padding: 1px;
+  border-radius: 3px 3px 0 0 ;
+  cursor: pointer;
+
+
+}
+section.chat .chat-header p {
+  margin: 0;
+  padding: 5px;
+  display: inline-block;
+
+}
+
+section.chat #messages li{
+  padding-bottom: 4px;
+  word-break: break-all;
+  border-bottom: 1px solid grey;
+}
+
+section.chat #messages {
+  height: 230px;
+  margin: 0;
+  font-size: 12px;
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll;
+  background-color: white;
+}
+section.chat #messages li{
+  margin: 3px 5px;
+
+}
+
+section.chat form input{
+  position: absolute;
+  bottom: 0;
+}
+section.chat form input{
+  width: calc(98% - 2px);
+  margin-left: -1px;
+}
+section.chat .chat-body{
+  border-left: 1px solid #C8C8C8;
+  border-right: 1px solid #C8C8C8;
+
+}
