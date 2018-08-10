@@ -8,7 +8,7 @@ $ npm install
 $ nodemon
 ```
 
-## Start the frontend
+## Setup the frontend
 
 ```
 # Go to /react and run
